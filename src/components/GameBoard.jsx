@@ -395,7 +395,7 @@ export default function GameBoard({ highScore, onGameOver }) {
     spawnTimerRef.current = setInterval(spawnRow, cfg.spawnInterval);
   }, []);
 
-  // ---- Speed level up every 10 seconds ----
+  // ---- Speed level up every 40 seconds ----
   const scheduleSpeedUp = useCallback(() => {
     speedTimerRef.current = setInterval(() => {
       if (!gameActiveRef.current) return;
@@ -406,7 +406,7 @@ export default function GameBoard({ highScore, onGameOver }) {
         scheduleSpawn();
         return next;
       });
-    }, 10000);
+    }, 40000);
   }, [scheduleSpawn]);
 
   // ---- Start everything on mount ----

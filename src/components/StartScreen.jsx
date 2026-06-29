@@ -40,7 +40,7 @@ export default function StartScreen({ onStart }) {
           </li>
           <li>
             <span className="icon speed">⚡</span>
-            <span>Speed <strong>increases every 10 sec</strong> — stay sharp</span>
+            <span>Speed <strong>increases every 40 sec</strong> — stay sharp</span>
           </li>
           <li>
             <span className="icon safe">⏬</span>
